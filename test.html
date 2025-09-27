@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Valorant Map Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <header class="text-center p-6 bg-red-600">
+      <h1 class="text-3xl font-extrabold tracking-wide">Valorant Map Quiz</h1>
+      <p class="mt-2 text-lg text-gray-200">
+        Test your knowledge of Valorant maps!
+      </p>
+    </header>
+
+    <main class="flex-grow container mx-auto px-6 py-10">
+      <form
+        action="#"
+        method="post"
+        class="space-y-8 bg-gray-800 p-6 rounded-lg shadow-lg max-w-3xl mx-auto"
+      >
+        <div>
+          <h2 class="text-xl font-semibold mb-3">
+            1. Which map has teleporters?
+          </h2>
+          <ul class="space-y-2">
+            <li>
+              <label><input type="radio" name="q1" value="bind" /> Bind</label>
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="haven" /> Haven</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="split" /> Split</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q1" value="icebox" /> Icebox</label
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold mb-3">
+            2. Which map has three bomb sites (A, B, and C)?
+          </h2>
+          <ul class="space-y-2">
+            <li>
+              <label
+                ><input type="radio" name="q2" value="ascent" /> Ascent</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="haven" /> Haven</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q2" value="split" /> Split</label
+              >
+            </li>
+            <li>
+              <label><input type="radio" name="q2" value="bind" /> Bind</label>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold mb-3">
+            3. Which map is set in Venice, Italy?
+          </h2>
+          <ol class="list-decimal list-inside space-y-2">
+            <li>
+              <label
+                ><input type="radio" name="q3" value="ascent" /> Ascent</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="icebox" /> Icebox</label
+              >
+            </li>
+            <li>
+              <label><input type="radio" name="q3" value="bind" /> Bind</label>
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q3" value="haven" /> Haven</label
+              >
+            </li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold mb-3">4. Which map has ziplines?</h2>
+          <ul class="space-y-2">
+            <li>
+              <label
+                ><input type="radio" name="q4" value="icebox" /> Icebox</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="split" /> Split</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q4" value="ascent" /> Ascent</label
+              >
+            </li>
+            <li>
+              <label><input type="radio" name="q4" value="bind" /> Bind</label>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold mb-3">
+            5. Which map features the A and B sites separated by a large open
+            middle area?
+          </h2>
+          <ul class="space-y-2">
+            <li>
+              <label
+                ><input type="radio" name="q5" value="ascent" /> Ascent</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="haven" /> Haven</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="icebox" /> Icebox</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="q5" value="split" /> Split</label
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex justify-center space-x-6">
+          <button
+            type="submit"
+            class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md"
+          >
+            Submit Quiz
+          </button>
+          <a
+            href="index.html"
+            class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md"
+          >
+            Return
+          </a>
+        </div>
+      </form>
+    </main>
+
+    <footer class="mt-auto bg-gray-800 text-center p-4 text-gray-400">
+      &copy; 2025 Valorant Strategies Blog
+    </footer>
+  </body>
+</html>
