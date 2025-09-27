@@ -2,169 +2,356 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Valorant Map Quiz</title>
+    <title>Valorant Map & Agent Quiz</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body class="bg-gray-900 text-white min-h-screen flex flex-col">
-    <header class="text-center p-6 bg-red-600">
-      <h1 class="text-3xl font-extrabold tracking-wide">Valorant Map Quiz</h1>
-      <p class="mt-2 text-lg text-gray-200">
-        Test your knowledge of Valorant maps!
-      </p>
+    <header class="bg-red-600 p-6 text-center rounded-b-lg shadow-lg">
+      <h1 class="text-4xl font-extrabold mb-2">Valorant Knowledge Test</h1>
+      <p class="text-lg text-gray-200">Test your skills on maps and agents!</p>
     </header>
 
-    <main class="flex-grow container mx-auto px-6 py-10">
-      <form
-        action="#"
-        method="post"
-        class="space-y-8 bg-gray-800 p-6 rounded-lg shadow-lg max-w-3xl mx-auto"
-      >
-        <div>
-          <h2 class="text-xl font-semibold mb-3">
-            1. Which map has teleporters?
-          </h2>
-          <ul class="space-y-2">
-            <li>
-              <label><input type="radio" name="q1" value="bind" /> Bind</label>
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q1" value="haven" /> Haven</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q1" value="split" /> Split</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q1" value="icebox" /> Icebox</label
-              >
-            </li>
-          </ul>
-        </div>
+    <main class="flex-grow container mx-auto px-6 py-8 max-w-4xl space-y-12">
+      <!-- Map Quiz -->
+      <section class="bg-gray-800 rounded-xl shadow-lg p-6">
+        <h2
+          class="text-2xl font-semibold mb-6 border-b border-red-500 pb-2 text-center"
+        >
+          Quiz: Valorant Maps
+        </h2>
+        <form class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold mb-3">
+              1. Which map has teleporters?
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <label
+                  ><input type="radio" name="m1" value="Bind" /> Bind</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m1" value="Split" /> Split</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m1" value="Haven" /> Haven</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m1" value="Ascent" /> Ascent</label
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div>
-          <h2 class="text-xl font-semibold mb-3">
-            2. Which map has three bomb sites (A, B, and C)?
-          </h2>
-          <ul class="space-y-2">
-            <li>
-              <label
-                ><input type="radio" name="q2" value="ascent" /> Ascent</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q2" value="haven" /> Haven</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q2" value="split" /> Split</label
-              >
-            </li>
-            <li>
-              <label><input type="radio" name="q2" value="bind" /> Bind</label>
-            </li>
-          </ul>
-        </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-3">
+              2. Which map has three bomb sites?
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <label
+                  ><input type="radio" name="m2" value="Bind" /> Bind</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m2" value="Haven" /> Haven</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m2" value="Ascent" /> Ascent</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m2" value="Icebox" /> Icebox</label
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div>
-          <h2 class="text-xl font-semibold mb-3">
-            3. Which map is set in Venice, Italy?
-          </h2>
-          <ol class="list-decimal list-inside space-y-2">
-            <li>
-              <label
-                ><input type="radio" name="q3" value="ascent" /> Ascent</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q3" value="icebox" /> Icebox</label
-              >
-            </li>
-            <li>
-              <label><input type="radio" name="q3" value="bind" /> Bind</label>
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q3" value="haven" /> Haven</label
-              >
-            </li>
-          </ol>
-        </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-3">
+              3. Which map is known for vertical fights with ropes?
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <label
+                  ><input type="radio" name="m3" value="Split" /> Split</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m3" value="Haven" /> Haven</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m3" value="Icebox" /> Icebox</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m3" value="Bind" /> Bind</label
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div>
-          <h2 class="text-xl font-semibold mb-3">4. Which map has ziplines?</h2>
-          <ul class="space-y-2">
-            <li>
-              <label
-                ><input type="radio" name="q4" value="icebox" /> Icebox</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q4" value="split" /> Split</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q4" value="ascent" /> Ascent</label
-              >
-            </li>
-            <li>
-              <label><input type="radio" name="q4" value="bind" /> Bind</label>
-            </li>
-          </ul>
-        </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-3">
+              4. Which map has a mid area controlled by a mechanical door?
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <label
+                  ><input type="radio" name="m4" value="Ascent" /> Ascent</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m4" value="Bind" /> Bind</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m4" value="Haven" /> Haven</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m4" value="Icebox" /> Icebox</label
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div>
-          <h2 class="text-xl font-semibold mb-3">
-            5. Which map features the A and B sites separated by a large open
-            middle area?
-          </h2>
-          <ul class="space-y-2">
-            <li>
-              <label
-                ><input type="radio" name="q5" value="ascent" /> Ascent</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q5" value="haven" /> Haven</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q5" value="icebox" /> Icebox</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="radio" name="q5" value="split" /> Split</label
-              >
-            </li>
-          </ul>
-        </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-3">
+              5. Which map is set in a snowy environment?
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <label
+                  ><input type="radio" name="m5" value="Ascent" /> Ascent</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m5" value="Bind" /> Bind</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m5" value="Icebox" /> Icebox</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="m5" value="Split" /> Split</label
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div class="flex justify-center space-x-6">
-          <button
-            type="submit"
-            class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md"
-          >
-            Submit Quiz
-          </button>
-          <a
-            href="index.html"
-            class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md"
-          >
-            Return
-          </a>
-        </div>
-      </form>
+          <div class="flex justify-center gap-4">
+            <input
+              type="submit"
+              value="Submit Maps Quiz"
+              class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg cursor-pointer"
+            />
+            <input
+              type="reset"
+              value="Reset"
+              class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-lg cursor-pointer"
+            />
+          </div>
+        </form>
+      </section>
+
+      <!-- Agent Quiz -->
+      <section class="bg-gray-800 rounded-xl shadow-lg p-6">
+        <h2
+          class="text-2xl font-semibold mb-6 border-b border-red-500 pb-2 text-center"
+        >
+          Quiz: Valorant Agents
+        </h2>
+        <form class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold mb-3">
+              1. Which agent can heal teammates?
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <label
+                  ><input type="radio" name="a1" value="Sage" /> Sage</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a1" value="Phoenix" />
+                  Phoenix</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a1" value="Skye" /> Skye</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a1" value="Omen" /> Omen</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-3">
+              2. Which duelist uses a blade ultimate?
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <label
+                  ><input type="radio" name="a2" value="Raze" /> Raze</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a2" value="Jett" /> Jett</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a2" value="Reyna" /> Reyna</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a2" value="Yoru" /> Yoru</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-3">
+              3. Which agent can teleport across short distances?
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <label
+                  ><input type="radio" name="a3" value="Jett" /> Jett</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a3" value="Chamber" />
+                  Chamber</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a3" value="Omen" /> Omen</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a3" value="Yoru" /> Yoru</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-3">
+              4. Which agent specializes in traps and tripwires?
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <label
+                  ><input type="radio" name="a4" value="Killjoy" />
+                  Killjoy</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a4" value="Cypher" /> Cypher</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a4" value="Viper" /> Viper</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a4" value="Skye" /> Skye</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-3">
+              5. Which agent uses toxic gas and poison walls?
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <label
+                  ><input type="radio" name="a5" value="Astra" /> Astra</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a5" value="Viper" /> Viper</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a5" value="Brimstone" />
+                  Brimstone</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="a5" value="Phoenix" />
+                  Phoenix</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex justify-center gap-4">
+            <input
+              type="submit"
+              value="Submit Agents Quiz"
+              class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-lg cursor-pointer"
+            />
+            <input
+              type="reset"
+              value="Reset"
+              class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-lg cursor-pointer"
+            />
+          </div>
+        </form>
+      </section>
+
+      <div class="text-center">
+        <a
+          href="index.html"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md"
+        >
+          ← Back to Home
+        </a>
+      </div>
     </main>
 
     <footer class="mt-auto bg-gray-800 text-center p-4 text-gray-400">
